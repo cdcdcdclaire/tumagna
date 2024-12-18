@@ -1,0 +1,82 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+        function login()
+        {
+            var username = document.getElementById ("user").value;
+            var password = document.getElementById ("pass").value;
+            if(username =="alfred" && password == "123")
+             {
+            window.location.href ="home.html";
+            alert("succesfully loged in");
+
+            }
+            else{
+                alert("incorrect to username or password");
+            }
+        }
+        function showpass(checkbox){
+            var checkbox = document.getElementById("check");
+            var password = document.getElementById("pass");
+            if(checkbox.checked == true){
+                password.setAttribute("type", "text");
+            }
+            else {
+                password.setAttribute("type","password");
+            }
+        }
+
+    </script>
+</head>
+<body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">TUMAGNA</h2>
+                </div>
+                <div class="menu">
+                <ul>
+                    <li><a href="home.html">IN</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="GALLERY1.html">GALLERY</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">FACEBOOK</a></li>
+                </ul>
+            </div>  
+            <div class="search">
+                <input class="srch" type="search" name=""placeholder="type to text">
+                <a href="#"><button class="btn" >Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1><br><span>Course-BSCS-1</h1><br></span>
+           <p class="par"><h1><p>"To bring about change,<br> you must not be afraid to take<br> the first step.<br> We will fail<br> when we fail to try." — <mark>Rosa Parks</h1></p></
+
+           <button class="cn"><a href="#">WELCOME!</a></button>
+           
+           <div class="form">
+            <h2>Login</h2>
+            <input type="email" id="user" placeholder="Enter Email Here">
+            <input type="password" id="pass" placeholder="Enter Password Here">
+            <button class="btnn" onclick="login()">Login</button>
+
+            <p class="link">Don't have an account</br>
+            <a href="#">Sign up</a> here</a></p>
+            <p class="liw">Log in  with</p>
+           
+           <div class="icon">
+           <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+           </div>
+           </div>
+        
+           <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
+</html>
